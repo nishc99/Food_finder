@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+     
+    <!-- Set meta tags for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Set title for webpage -->
+    <title> to make professional cook</title>
+
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="meals.css" />
+      
+    <!-- Link to Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/d42a0e31b8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+           $("#includeHtml").load("whyChoose.html");
+        });
+     </script>
+</head>
+
+<body onload="myFunction()">
+
+    
+    <!-- Navigation bar section -->
+
+    <div id="navbar">
+        <a href="index.html">
+            <div class="top-logo">
+                <img  class="top-logo1" src="meallogo.png" alt="img">
+            </div>
+        </a>
+        <div class="side-drawer">
+          <div class="navbarContent">
+            <a href="index.html">
+            <div><h4>
+                Home
+            </h4></div>
+        </a>
+        <a href="#section-1">
+            <div><h4>
+                About
+            </h4></div>
+        </a>
+        <a href="#section-2">
+            <div><h4>
+                Contact
+            </h4></div>
+        </a>
+        <a href="#section-3">
+            <div><h4>
+             Why Choose Us ??
+            </h4></div>
+
+          </div>
+        </a>
+        
+            <div id="toggle-sidebar">
+                <i class="fa-solid fa-bars"></i>
+                <span id="total-counter">0</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main content section -->
+    <div id="main">
+      
+        <!-- Sidebar section -->
+        <div id="sidebar">
+            <div class="top_gap"></div>
+            <hr />
+            <div class="title small">
+                Favourable Items
+            </div>
+            <hr />
+            <div id="fav">
+                
+            </div>
+        </div>
+
+        <!-- Flex box container for main content -->
+        <div id="flex-box">
+            
+            <div class="container">
+                
+                <div class="foodnew1">
+                    <div class="qtext"><h1 >DELICIOUSLY CRAFTED CULINARY INSPIRATION AT YOUR FINGERTIPS</h1></div>
+                <div>
+                    <a href="contact.html">
+                        
+                     </a>
+                </div>
+                </div>
+                <!-- Header section -->
+              
+
+                <!-- Search bar section -->
+                <div class="" id="search-bar">
+                    <div class="icon">
+                        <i class="fa-solid fa-search "></i>
+                    </div>
+                    <div class="new-search-input">
+                        <form onkeyup="showMealList()">
+                            <input id="search-input" type="text" placeholder="Search food and recipes" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards holder section for displaying meals -->
+            <div id="cards-holder" class="">
+                
+            </div>
+            <section id="section-1" class="about">
+                <div class="main">
+                  <img src="images/aboutimage.png">
+              <div class="about-text">
+                  <h1>About Us</h1>
+                  <h5>FOOD <span>FINDER</span></h5>
+                  <p>At Food Finder, We are passionate about connecting food lovers with the best culinary experiences. Our mission is to be your trusted companion on your culinary journey. We strive to curate a comprehensive and diverse database of eateries, catering to different tastes, budgets, and dietary preferences.</p>
+              </div>
+                </div>
+              </section>
+              <section id="section-2" class="sec1">
+                
+                <div class="section-header">
+                  <div class="container">
+                    <h2>Contact Us</h2>
+                    <p>At Food Finder, We are passionate about connecting food lovers with the best culinary experiences. Our mission is to be your trusted companion on your culinary journey. We strive to curate a comprehensive and diverse database of eateries, catering to different tastes, budgets, and dietary preferences.</p>
+                  </div>
+                </div>
+                
+                <div class="container">
+                  <div class="row">
+                    
+                    <div class="contact-info">
+                      <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                          <i class="fas fa-home" aria-hidden="true"></i>
+                        </div>
+                        
+                        <div class="contact-info-content">
+                          <h4>Address</h4>
+                          <p>Belkahalli 3rd stage<br/> Bangalore, Karnataka <br/>540001</p>
+                        </div>
+                      </div>
+                      
+                      <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                          <i class="fas fa-phone"></i>
+                        </div>
+                        
+                        <div class="contact-info-content">
+                          <h4>Phone</h4>
+                          <p>9400002342</p>
+                        </div>
+                      </div>
+                      
+                      <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                          <i class="fas fa-envelope"></i>
+                        </div>
+                        
+                        <div class="contact-info-content">
+                          <h4>Email</h4>
+                         <p>foodfinder@email.com</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                      <form action="" id="contact-form">
+                        <h2>Send Message</h2>
+                        <div class="input-box">
+                          <input type="text" required="true" name="">
+                          <span>Full Name</span>
+                        </div>
+                        
+                        <div class="input-box">
+                          <input type="email" required="true" name="">
+                          <span>Email</span>
+                        </div>
+                        
+                        <div class="input-box">
+                          <textarea required="true" name=""></textarea>
+                          <span>Type your Message...</span>
+                        </div>
+                        
+                        <div class="input-box">
+                          <input type="submit" value="Send" name="">
+                        </div>
+                      </form>
+                    </div>
+                    
+                  </div>
+                </div>
+              </section>
+              <section id="section-3" class="">
+                <div id="includeHtml"></div>
+              </section>
+
+            <footer>
+                <div class="main-content">
+                    <div class="left box">
+                        <h2>About us</h2>
+                        <div class="content">
+                          <p>At Food Finder, We are passionate about connecting food lovers with the best culinary experiences. Our mission is to be your trusted companion on your culinary journey. We strive to curate a comprehensive and diverse database of eateries, catering to different tastes, budgets, and dietary preferences. </p>
+                          <div class="social">
+                            <a href="https://www.facebook.com/VahChef.SanjayThumma?ref=hl"><span class="fab fa-facebook-f"></span></a>
+                            <a><span class="fab fa-twitter"></span></a>
+                            <a><span class="fab fa-instagram"></span></a>
+                            <a href="https://www.youtube.com/@vahrehvah"><span class="fab fa-youtube"></span></a>
+                          </div>
+                        </div>
+                      </div>
+                  
+              </footer>
+        </div>  
+      
+    </div>
+
+  
+
+    <!-- Link to external JavaScript file -->
+    <script src="meals.js"></script>
+    
+</body>
+</html>

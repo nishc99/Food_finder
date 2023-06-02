@@ -1,0 +1,54 @@
+.wcs-section {
+    background-color: #f9fbfe;
+    background-size: cover;
+
+}
+
+.wcs-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.wcs-section-description {
+    color: #323f4b;
+}
+
+.wcs-card {
+    background-color: #ffffff;
+    height: 300px;
+    border-radius: 8px;
+    text-align: center;
+    border-style: solid;
+    border-width: 0px;
+
+
+}
+
+.wcs-card-image {
+    height: 70px;
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wcs-card-heading {
+    font-size: 25px;
+    font-family: "Roboto";
+    color: black;
+}
+
+.wcs-card-description {
+    color: #0c0c0c;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.offers {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* bootstrap */
